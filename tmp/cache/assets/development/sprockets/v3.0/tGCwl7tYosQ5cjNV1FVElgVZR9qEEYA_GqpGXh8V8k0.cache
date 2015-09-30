@@ -1,0 +1,12 @@
+I"ç(function() {
+  window.CourseTaking = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {}
+  };
+
+  alert();
+
+}).call(this);
+:ET

@@ -1,0 +1,14 @@
+I"Ä(function() {
+  window.CourseTaking = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {}
+  };
+
+  alert();
+
+  $('ol > li').has('ul').addClass('sub-menu active');
+
+}).call(this);
+:ET

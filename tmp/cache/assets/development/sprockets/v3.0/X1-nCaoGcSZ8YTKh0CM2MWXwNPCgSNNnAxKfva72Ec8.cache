@@ -1,0 +1,70 @@
+I"î	(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  CourseTaking.Views.CourseContentView = (function(superClass) {
+    extend(CourseContentView, superClass);
+
+    function CourseContentView() {
+      return CourseContentView.__super__.constructor.apply(this, arguments);
+    }
+
+    CourseContentView.prototype.template = JST['courses/course_content'];
+
+    CourseContentView.prototype.template1 = JST['courses/assessment'];
+
+    CourseContentView.prototype.events = {
+      'click .saveOption': 'answerSave'
+    };
+
+    CourseContentView.prototype.initialize = function(options) {
+      return this.dataId = options.dataId;
+    };
+
+    CourseContentView.prototype.render = function() {
+      this.model = new CourseTaking.Models.CourseContent();
+      this.model.set({
+        id: this.dataId
+      });
+      return this.model.fetch({
+        success: (function(_this) {
+          return function() {
+            console.log('some one', _this.model.get('section_type'));
+            if (_this.model.get('section_type') === 'assesment') {
+              _this.assesmentModel = new CourseTaking.Models.CourseAssessment();
+              _this.assesmentModel.fetch({
+                success: function() {
+                  return _this.$el.html(_this.template1({
+                    assessment: _this.assesmentModel.get('questions')
+                  }));
+                }
+              });
+            } else {
+              _this.$el.html(_this.template({
+                id: _this.model.get('id'),
+                text: _this.model.get('text'),
+                type: _this.model.get('section_type')
+              }));
+            }
+            return _this;
+          };
+        })(this)
+      });
+    };
+
+    CourseContentView.prototype.answerSave = function(events) {
+      var optionId;
+      optionId = $(events.currentTarget).attr('data-id');
+      console.log('element', $('input[name="option_#{optionId}"]').find('.assessmentOptions').prop("checked", true));
+      if ($('input[name="option<%=optionId%>"]').find('.assessmentOptions').prop("checked", true)) {
+        alert('yoooooo');
+      }
+      return console.log('callles', $(events.currentTarget).attr('data-id'));
+    };
+
+    return CourseContentView;
+
+  })(Backbone.View);
+
+}).call(this);
+:ET

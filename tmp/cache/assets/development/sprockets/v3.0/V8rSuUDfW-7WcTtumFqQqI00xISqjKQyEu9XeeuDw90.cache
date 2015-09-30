@@ -1,0 +1,53 @@
+I"L(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  CourseTaking.Views.CoursesIndex = (function(superClass) {
+    extend(CoursesIndex, superClass);
+
+    function CoursesIndex() {
+      this.render = bind(this.render, this);
+      return CoursesIndex.__super__.constructor.apply(this, arguments);
+    }
+
+    CoursesIndex.prototype.el = '#main-container';
+
+    CoursesIndex.prototype.template = JST['courses/index'];
+
+    CoursesIndex.prototype.events = {
+      'click .sections': 'showCourseContent'
+    };
+
+    CoursesIndex.prototype.initialize = function() {
+      return this.model.bind('change', this.render);
+    };
+
+    CoursesIndex.prototype.render = function() {
+      this.collection = new CourseTaking.Collections.Courses(this.model.toJSON());
+      this.$el.append(this.template({
+        courses: this.model.toJSON()
+      }));
+      this.courseOutline = new CourseTaking.Views.CourseOutlineView({
+        model: this.model,
+        el: this.$el.find('#wrap')
+      });
+      console;
+      $('#wrap').append(this.courseOutline.render());
+      return $('.vertical-left-menu').hide();
+    };
+
+    CoursesIndex.prototype.showCourseContent = function(events) {
+      this.courseContent = new CourseTaking.Views.CourseContentView({
+        el: this.$el.find('#course_content'),
+        dataId: $(events.currentTarget).attr('data-id')
+      });
+      return $('#course_content').append(this.courseContent.render());
+    };
+
+    return CoursesIndex;
+
+  })(Backbone.View);
+
+}).call(this);
+:ET

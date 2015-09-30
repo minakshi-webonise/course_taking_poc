@@ -1,0 +1,15 @@
+I"Ë(function() {
+  window.CourseTaking = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {}
+  };
+
+  $(function() {
+    alert();
+    $('.vertical-left-menu').hide();
+  });
+
+}).call(this);
+:ET

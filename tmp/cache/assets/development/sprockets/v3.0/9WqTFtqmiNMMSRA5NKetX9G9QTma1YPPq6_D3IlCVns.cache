@@ -1,0 +1,18 @@
+I"J(function() {
+  window.CourseTaking = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {}
+  };
+
+  $(function() {
+    alert();
+    $('ol > li').has('ul').addClass('sub-menu active');
+    $('.sub-menu').click(function() {
+      $(this).toggleClass('active').find('ul').slideToggle();
+    });
+  });
+
+}).call(this);
+:ET
