@@ -1,0 +1,14 @@
+<h1> minuuuuuuuu</h1>
+<p class ='course_name'><% console.log('here is I am', assessment) %></p>
+
+<ul>
+<% _.each(assessment,function(value,questionKey){ %>
+<li><span><%=value.question%></span></li>
+<% _.each(value.answers,function(answer,key){ %>
+<li><span><input type="radio" class="assessmentOptions" id="<%=key%>" name ="option_<%=questionKey%>"/></span>
+<span><%=answer%></span></li>
+<% }) %>
+<button class="saveOption saveBtn_<%=questionKey%>"  data-id= <%=questionKey%>>Save</button>
+<% }) %>
+</ul>
+

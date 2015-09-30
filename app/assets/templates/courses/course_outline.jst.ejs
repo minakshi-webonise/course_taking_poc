@@ -1,0 +1,12 @@
+<ul>
+  <% _.each(courses,function(course){ %>
+    <li><a href= #  class = 'chapters' id = "course_<%=course.id%>" data-id= <%=course.id%> ><%= course.name %></a></li>
+      <ul>
+        <% _.each(course.sections,function(section){ %>
+          <li><a href= # id = "section_<%=section.id%>" class = 'sections' data-id= <%=section.id%> " ><%= section.name %></a></li>
+        <% }) %>
+      </ul>
+    <% }) %>
+  </ul>
+</div>
+
