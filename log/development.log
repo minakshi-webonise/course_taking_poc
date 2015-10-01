@@ -18050,3 +18050,1938 @@ Processing by AssessmentsController#show as JSON
   Parameters: {"id"=>"1"}
 {"controller"=>"assessments", "action"=>"show", "id"=>"1"}
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_table_sections_on_course_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_table_sections_on_course_id' AND type='index'
+[0m
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:47:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (1.1ms)
+WARNING on line 24 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 9997ms (Views: 9940.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-6029e7dbe2dde3f01cc3927ba20050ef5105135f6301a3a18a62d8a3ae19fcd8.css?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/custom.self-e94feeb6180f06e71b5046373ff00b1b3c24adf7aa540bbf543a26459cf25647.css?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/scaffolds.self-56d43cef1213d58450fbdf7c0f9de0b42a28fb25bf6626a4d566e24e30b40424.css?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/application.self-4f22ee513bff51c07ddbacea6716b3bb025259c40c0c44f68b3b024ed0ff7a2c.css?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/course_taking.self-b9e8e319b4a6c8384bb0b1ab66a2c98bd913ae5d434320d195b8b9c5ab197755.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/courses/assessment.self-d33c5af5e89436e70ec10816e7847caed189ceaa7951757758391932f88079a6.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/courses/course_outline.self-41bfbc7ff1d9be28e145736b6f8afbfb4b6c55e77fea5be0170149c899c87c82.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/courses/index.self-8f054b884fd4352b7e951c103e33abb605c81570caa453a2cea7cbb931d609e1.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/courses/course_content.self-1a3d411c572723f48890702311cfe8e3bbe940903871a74cc91c8512afcad964.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/models/course.self-2d992664324d7e2e1c5e8b63f6324995ed6a5c6dcd197e70293f87eb4bcd37f5.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/models/course_content.self-806b1850bcbc325b4a82b2e2e65b29edfcd2bbe1aae784bfe040ead8051576bf.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/models/course_assessment.self-e933108ddfdfa3fddeefd5e42ca51dc2d72f5f5b37f70a36fe14aed2e6627978.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/collections/courses.self-99a38870b911cef8699316ac6fa3d663ae0d0db89ad8b4ea3a4063d3c3fdeda1.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/views/courses/assessment_view.self-fd46e2d2f065858dc6e64dbcc0d11e6a43cba14d429bd6e0cac1a5516efb8e7a.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/views/courses/course_content_view.self-eb6b2e4dabb393dcbfde9c893b2404ca2ab428ce27a106d27fdac2e9f048fee0.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/views/courses/course_outline_view.self-ff96f7e2889b1e9c41c361ec8e4ae2a2c15785b36ff0df54548948a7f4f2075f.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:25 +0530
+
+
+Started GET "/assets/views/courses/courses_index.self-ababe307a2b273d2633a0df97c0f3062a1ae20fdce5a4f542e2e1566f57c8d82.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:26 +0530
+
+
+Started GET "/assets/routers/courses_router.self-bc372f8ed2ff65d670b7781687c8127d0e17f27f2951965cc53c3ba5ea3fafa2.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:26 +0530
+
+
+Started GET "/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:26 +0530
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 127.0.0.1 at 2015-09-30 18:47:26 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:47:26 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:50:41 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (1.1ms)
+WARNING on line 54 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 970ms (Views: 933.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-e35583df1e4b9c00469d45fa139286481ec306408561396a79eb113c7de3ab71.css?body=1" for 127.0.0.1 at 2015-09-30 18:50:42 +0530
+
+
+Started GET "/assets/courses/assessment.self-bc5b19ba50e45ea5fe22340296733f0d37dc837108fe26b0188351c9a5c1d909.js?body=1" for 127.0.0.1 at 2015-09-30 18:50:42 +0530
+
+
+Started GET "/assets/courses/course_outline.self-d522c2871485a2da033ade85e59d8b28fb38570d0d578d8fce8f9d228de2d8e4.js?body=1" for 127.0.0.1 at 2015-09-30 18:50:42 +0530
+
+
+Started GET "/assets/courses/index.self-cdb6a994c4dab2d3bc3344be3676b7d2c2f0e8f18071d3caaa79c4b4ad050716.js?body=1" for 127.0.0.1 at 2015-09-30 18:50:42 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:50:42 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:50:46 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:50:46 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:52:31 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 53 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 243ms (Views: 242.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-6de145cefe7ce185b4d210e131264e7db2237de37bedf1362b3e5d06bf94143e.css?body=1" for 127.0.0.1 at 2015-09-30 18:52:31 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:52:32 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:53:20 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 55 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 237ms (Views: 235.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-deaa9223410cded25856166002de085076ef8677ac3ae36669f15547e0dd53a6.css?body=1" for 127.0.0.1 at 2015-09-30 18:53:20 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:53:20 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:53:53 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:53:53 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:55:27 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 55 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 771ms (Views: 770.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-9421a7b2c3f3467c12a4b0b08d3fd2afe4449118f46d339bac4014bc218a5a57.css?body=1" for 127.0.0.1 at 2015-09-30 18:55:29 +0530
+
+
+Started GET "/assets/courses/assessment.self-fa071c564e80ae15a78633d0282a0083f5262ffa1b336cb94dc593c5a97c992b.js?body=1" for 127.0.0.1 at 2015-09-30 18:55:29 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:55:32 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:55:34 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:55:34 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:56:21 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 57 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 197ms (Views: 196.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-14aca40f3d737b8d21c037d5a8b718b5bb23b15386f28ea203c4b47336f98c50.css?body=1" for 127.0.0.1 at 2015-09-30 18:56:21 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:56:22 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:56:23 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:56:24 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:56:39 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 57 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 195ms (Views: 194.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-00269282f775174f18d7306fc0502aea62ae3e8370156eda23ddcbe79108641a.css?body=1" for 127.0.0.1 at 2015-09-30 18:56:40 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:56:41 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:56:42 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:56:42 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:58:16 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 60 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 238ms (Views: 236.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-92e6884cc251983a9719f1cffd29087969ddc3f9dcca157756c2084d22bbcd11.css?body=1" for 127.0.0.1 at 2015-09-30 18:58:17 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:58:18 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:58:19 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:58:19 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 18:59:08 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 61 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 217ms (Views: 215.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-d24912dd26879c2f155f75d4c8d311861a4c42d2d815accd870500fe848e1265.css?body=1" for 127.0.0.1 at 2015-09-30 18:59:09 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 18:59:09 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 18:59:12 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 18:59:12 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:00:20 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 65 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 199ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-3e11ce2566a8aee6648bbeec4abf7a634844329c2574eb72a73ae182cf69b323.css?body=1" for 127.0.0.1 at 2015-09-30 19:00:21 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:00:21 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:00:22 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:00:22 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:01:03 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 66 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 209ms (Views: 208.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-e364106bbfddb19a68dbe093589589fd84db0a70354ca08ee4219171aca16190.css?body=1" for 127.0.0.1 at 2015-09-30 19:01:03 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:01:03 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:01:09 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:01:09 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:01:10 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:01:10 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:01:50 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 242ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-5989e5908d918c545b9f5739f1afa7fb7acd62007a764fd3c17a78ace649126b.js?body=1" for 127.0.0.1 at 2015-09-30 19:01:50 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:01:50 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:01:52 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:01:52 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:02:06 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 236ms (Views: 235.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-e7df10935da3b7044619490e21530a478e8339d6015750466ee7bda0124f86df.js?body=1" for 127.0.0.1 at 2015-09-30 19:02:07 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:02:07 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:02:08 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:02:08 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:02:24 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:02:25 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:02:26 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:02:26 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:02:33 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 134ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:02:34 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:02:35 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:02:35 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:02:36 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:02:36 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:02:36 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:02:36 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:03:08 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 314ms (Views: 313.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/course_outline.self-f218cb88628b64188802b7f16e6e604ac09ea0afdcb3759c03adae31b05364db.js?body=1" for 127.0.0.1 at 2015-09-30 19:03:09 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:03:09 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:03:23 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 65 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 198ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-c9764a2547e185e5695d524ec6bad8becec0acebeb75b13eec7bc067ef8b2b6e.css?body=1" for 127.0.0.1 at 2015-09-30 19:03:23 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:03:24 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 67 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 252ms (Views: 250.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-6029e7dbe2dde3f01cc3927ba20050ef5105135f6301a3a18a62d8a3ae19fcd8.css?body=1" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+
+
+Started GET "/assets/custom.self-029e8102bd34a022caa1e957f7d5816935949b59a5938e135a1cc7b2f9c886ec.css?body=1" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+
+
+Started GET "/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+
+
+Started GET "/assets/scaffolds.self-56d43cef1213d58450fbdf7c0f9de0b42a28fb25bf6626a4d566e24e30b40424.css?body=1" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+
+
+Started GET "/assets/application.self-4f22ee513bff51c07ddbacea6716b3bb025259c40c0c44f68b3b024ed0ff7a2c.css?body=1" for 127.0.0.1 at 2015-09-30 19:04:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/course_taking.self-b9e8e319b4a6c8384bb0b1ab66a2c98bd913ae5d434320d195b8b9c5ab197755.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/courses/assessment.self-e7df10935da3b7044619490e21530a478e8339d6015750466ee7bda0124f86df.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/courses/course_content.self-1a3d411c572723f48890702311cfe8e3bbe940903871a74cc91c8512afcad964.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/courses/course_outline.self-f218cb88628b64188802b7f16e6e604ac09ea0afdcb3759c03adae31b05364db.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/courses/index.self-cdb6a994c4dab2d3bc3344be3676b7d2c2f0e8f18071d3caaa79c4b4ad050716.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/models/course.self-2d992664324d7e2e1c5e8b63f6324995ed6a5c6dcd197e70293f87eb4bcd37f5.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/models/course_assessment.self-e933108ddfdfa3fddeefd5e42ca51dc2d72f5f5b37f70a36fe14aed2e6627978.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/models/course_content.self-806b1850bcbc325b4a82b2e2e65b29edfcd2bbe1aae784bfe040ead8051576bf.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/views/courses/assessment_view.self-fd46e2d2f065858dc6e64dbcc0d11e6a43cba14d429bd6e0cac1a5516efb8e7a.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/collections/courses.self-99a38870b911cef8699316ac6fa3d663ae0d0db89ad8b4ea3a4063d3c3fdeda1.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/views/courses/course_content_view.self-eb6b2e4dabb393dcbfde9c893b2404ca2ab428ce27a106d27fdac2e9f048fee0.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/views/courses/course_outline_view.self-ff96f7e2889b1e9c41c361ec8e4ae2a2c15785b36ff0df54548948a7f4f2075f.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/views/courses/courses_index.self-ababe307a2b273d2633a0df97c0f3062a1ae20fdce5a4f542e2e1566f57c8d82.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/routers/courses_router.self-bc372f8ed2ff65d670b7781687c8127d0e17f27f2951965cc53c3ba5ea3fafa2.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:04:44 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:05:20 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 68 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 237ms (Views: 236.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-7d7f1937b311357876c19d6d8241dfc73f8d195223d927a9588c8e8c8ad7b990.css?body=1" for 127.0.0.1 at 2015-09-30 19:05:20 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:05:20 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:06:35 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 69 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 236ms (Views: 235.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-9dce558d65094fbad155e32c9ed75d0e6d1dca8ab4f25b8361893a0389db5090.css?body=1" for 127.0.0.1 at 2015-09-30 19:06:36 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:06:36 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:08:16 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 276ms (Views: 275.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-c8994cb6c561c0ce3ae28af66b28cabf9577be8aa4a22bb30adee9614b4eb7e3.js?body=1" for 127.0.0.1 at 2015-09-30 19:08:16 +0530
+
+
+Started GET "/assets/courses/course_outline.self-f43c3893763fc27256dc8326496f82cd1f3ac05a320a5f891d173eaac657c3af.js?body=1" for 127.0.0.1 at 2015-09-30 19:08:16 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:08:17 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:12:00 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 83 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 211ms (Views: 210.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-3f76ad0f1e86b4ace538576cf40d0eff2a710b251e811fb0a47c3e1b79223a4c.css?body=1" for 127.0.0.1 at 2015-09-30 19:12:00 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:12:01 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:13:02 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 85 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 210ms (Views: 209.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-ed8c07d3f15b9ba4d7d4b0d56edb4ca94e35fb32ff4390c4d6955767743f33e9.css?body=1" for 127.0.0.1 at 2015-09-30 19:13:02 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:13:02 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:13:39 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 86 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 220ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-68bbc9f394b5ffd83e7c4740ee78802b08970eb4f1ad10d5e341035efc309be0.css?body=1" for 127.0.0.1 at 2015-09-30 19:13:40 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:13:40 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:14:11 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 86 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 199ms (Views: 198.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-18cbd04e9e6d5b0dcc5b914e51a92a31bc86b11795acd13b54e7a56803d02c18.css?body=1" for 127.0.0.1 at 2015-09-30 19:14:11 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:14:12 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:14:52 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:14:52 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:15:37 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 231ms (Views: 230.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-9fca659f4928ef0a1a1204bca75908678694fcfca9de7e4cfe03c34a6a4df062.js?body=1" for 127.0.0.1 at 2015-09-30 19:15:38 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:15:38 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:15:39 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:15:39 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:16:49 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 84 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 203ms (Views: 202.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-f5178a8eb469afc81d44684d580a1f686aa7c67218a9e154d2ed59054d4d89e0.css?body=1" for 127.0.0.1 at 2015-09-30 19:16:49 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:16:50 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 26ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:16:51 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:16:52 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:17:21 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 86 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 220ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-bbb6b49497ab5fcfffea260d3c6eb46fa7bcd422d4a3ea7b50bd4e8d5552c9f3.css?body=1" for 127.0.0.1 at 2015-09-30 19:17:22 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:17:22 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:17:24 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:17:24 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:18:37 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 88 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 308ms (Views: 307.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-bf6dc58201d4086630b7570b09843bfcf4c3d0347fa9388460a4bc4b629113fc.css?body=1" for 127.0.0.1 at 2015-09-30 19:18:37 +0530
+
+
+Started GET "/assets/courses/assessment.self-04c7ac0ee4e6264067e38dd311e53edfd25f5147b7e3fca865fb69c8a7fe1e06.js?body=1" for 127.0.0.1 at 2015-09-30 19:18:38 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:18:39 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:18:42 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:18:42 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:20:17 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 240ms (Views: 239.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-a54be9d7cf730ea3f102a59dbf36d6e308eefdaf689b01506997ef2c7908d827.js?body=1" for 127.0.0.1 at 2015-09-30 19:20:17 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:20:17 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:20:19 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:20:19 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:22:59 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 272ms (Views: 271.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-bac8fce116d5a9f7d0248b3473f5a3cd133fbc68673a74cb09e4682f663f045b.js?body=1" for 127.0.0.1 at 2015-09-30 19:22:59 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:23:00 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:23:01 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:23:01 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:23:45 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 309ms (Views: 308.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/assessment.self-312850421623f7596c8a6f94465bbef2e7cad21fd4c1552cf8d45a8adaa4541d.js?body=1" for 127.0.0.1 at 2015-09-30 19:23:46 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:23:47 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:23:48 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:23:48 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:25:29 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 86 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 396ms (Views: 395.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-8e037bfab2325dddca1664e7b5b031d8b04235ed4416fc17b84dc7ce3eae9ed1.css?body=1" for 127.0.0.1 at 2015-09-30 19:25:29 +0530
+
+
+Started GET "/assets/courses/assessment.self-fd9d317d34341cf3883d15b179b0539086495818fe016f1719b2ed29996af580.js?body=1" for 127.0.0.1 at 2015-09-30 19:25:29 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:25:31 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:25:34 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:25:34 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:26:27 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+WARNING on line 88 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 218ms (Views: 217.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-a6a069cc81e840cd4a1482a3954a335be4cab85fa6a283e7a88f39fbcbe0574d.css?body=1" for 127.0.0.1 at 2015-09-30 19:26:27 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:26:28 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:26:29 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:26:29 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:28:03 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 89 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 227ms (Views: 226.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-6b65959f4aebb16d2c7af49eeed98272d128dd19c153c01169b7e58ae8915cd1.css?body=1" for 127.0.0.1 at 2015-09-30 19:28:04 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:28:04 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:28:05 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:28:05 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:28:11 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:28:11 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:28:17 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 116ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:28:18 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:37:49 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 490ms (Views: 487.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course_taking.self-277652a6234dbae87353b075794f895e95258db6493d2578aa30ce98f222fd3b.js?body=1" for 127.0.0.1 at 2015-09-30 19:37:49 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:37:51 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:38:03 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 815ms (Views: 814.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course_taking.self-5b05a65c6709c1b9e7ec5be4cf7f6f7baf811368731563d2cee42c60ea8b077f.js?body=1" for 127.0.0.1 at 2015-09-30 19:38:04 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:38:05 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:38:32 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 430ms (Views: 429.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course_taking.self-053c2bae339bbfb65d8c67c3754206fa9c4e243bca60bfca119eb8f816c34537.js?body=1" for 127.0.0.1 at 2015-09-30 19:38:33 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:38:35 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:39:26 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 349ms (Views: 348.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course_taking.self-8e2dbc64bb5c1a785786195169c489237e984ff7cfae50c37db7c18cb3cc082c.js?body=1" for 127.0.0.1 at 2015-09-30 19:39:26 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:39:28 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:40:32 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 353ms (Views: 351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course_taking.self-4ed12ee10fb0348d24c92a5bf8d345616cde99436dbb88ac4b8d7765d32e617f.js?body=1" for 127.0.0.1 at 2015-09-30 19:40:32 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:40:34 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:40:38 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 123ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:40:39 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:41:41 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:41:41 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:41:44 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:41:44 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:43:40 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 426ms (Views: 424.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/views/courses/courses_index.self-441447d9cd12228f8e2ae76f570bc5fe3c175ce01d762dd70617816714fe1fa7.js?body=1" for 127.0.0.1 at 2015-09-30 19:43:41 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:43:42 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:45:14 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 373ms (Views: 372.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/views/courses/courses_index.self-1bff52a57bbac993f521283ac931e9f1cca9f6a386c8542079d01f8ddbb43d6c.js?body=1" for 127.0.0.1 at 2015-09-30 19:45:14 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:45:14 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:45:48 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:45:48 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:45:56 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:45:56 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:45:57 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:45:57 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/79" for 127.0.0.1 at 2015-09-30 19:45:58 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"79"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"79"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:45:58 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:45:59 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:45:59 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:46:00 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:00 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/79" for 127.0.0.1 at 2015-09-30 19:46:00 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"79"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"79"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:00 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:46:25 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 92 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 226ms (Views: 225.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-af2251205dc89d6df40016f38f52c5e1e080efbd655953bcb4bc08ac5376d1d0.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:25 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:46:25 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:46:28 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:28 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 147ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-6029e7dbe2dde3f01cc3927ba20050ef5105135f6301a3a18a62d8a3ae19fcd8.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/custom.self-af2251205dc89d6df40016f38f52c5e1e080efbd655953bcb4bc08ac5376d1d0.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/scaffolds.self-56d43cef1213d58450fbdf7c0f9de0b42a28fb25bf6626a4d566e24e30b40424.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/application.self-4f22ee513bff51c07ddbacea6716b3bb025259c40c0c44f68b3b024ed0ff7a2c.css?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/course_taking.self-b9e8e319b4a6c8384bb0b1ab66a2c98bd913ae5d434320d195b8b9c5ab197755.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/courses/assessment.self-fd9d317d34341cf3883d15b179b0539086495818fe016f1719b2ed29996af580.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/courses/course_content.self-1a3d411c572723f48890702311cfe8e3bbe940903871a74cc91c8512afcad964.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/courses/course_outline.self-f43c3893763fc27256dc8326496f82cd1f3ac05a320a5f891d173eaac657c3af.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/courses/index.self-cdb6a994c4dab2d3bc3344be3676b7d2c2f0e8f18071d3caaa79c4b4ad050716.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/models/course.self-2d992664324d7e2e1c5e8b63f6324995ed6a5c6dcd197e70293f87eb4bcd37f5.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/models/course_assessment.self-e933108ddfdfa3fddeefd5e42ca51dc2d72f5f5b37f70a36fe14aed2e6627978.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/models/course_content.self-806b1850bcbc325b4a82b2e2e65b29edfcd2bbe1aae784bfe040ead8051576bf.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/collections/courses.self-99a38870b911cef8699316ac6fa3d663ae0d0db89ad8b4ea3a4063d3c3fdeda1.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/views/courses/assessment_view.self-fd46e2d2f065858dc6e64dbcc0d11e6a43cba14d429bd6e0cac1a5516efb8e7a.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/views/courses/course_outline_view.self-ff96f7e2889b1e9c41c361ec8e4ae2a2c15785b36ff0df54548948a7f4f2075f.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:31 +0530
+
+
+Started GET "/assets/views/courses/course_content_view.self-eb6b2e4dabb393dcbfde9c893b2404ca2ab428ce27a106d27fdac2e9f048fee0.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+
+
+Started GET "/assets/views/courses/courses_index.self-1bff52a57bbac993f521283ac931e9f1cca9f6a386c8542079d01f8ddbb43d6c.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+
+
+Started GET "/assets/routers/courses_router.self-bc372f8ed2ff65d670b7781687c8127d0e17f27f2951965cc53c3ba5ea3fafa2.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+
+
+Started GET "/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:46:32 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:46:33 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:33 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:46:35 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:35 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/79" for 127.0.0.1 at 2015-09-30 19:46:36 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"79"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"79"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:36 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:46:57 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:57 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:46:59 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:46:59 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:01 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:01 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:17 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:17 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:28 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:28 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:29 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:29 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:30 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:30 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:30 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:31 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:36 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:36 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:37 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:38 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/79" for 127.0.0.1 at 2015-09-30 19:47:38 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"79"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"79"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:38 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:39 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:39 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/79" for 127.0.0.1 at 2015-09-30 19:47:40 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"79"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"79"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:40 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:40 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:40 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:41 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:41 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:47:49 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:49 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:51 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:51 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/76" for 127.0.0.1 at 2015-09-30 19:47:52 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"76"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"76"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:47:52 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:49:42 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:49:43 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:50:15 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 94 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 207ms (Views: 206.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-c26f44c50f9ec99fd69f9bfa1b8c92b5a197d23ef4d476958082deedf0fe0265.css?body=1" for 127.0.0.1 at 2015-09-30 19:50:16 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:50:16 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:51:00 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+WARNING on line 94 of /media/extra/projects/course_taking_poc/app/assets/stylesheets/custom.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 186ms (Views: 185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-b97ce20ae80e4e00f7055d198085d15213c9544c9646d3bf6f5d18c7285c2614.css?body=1" for 127.0.0.1 at 2015-09-30 19:51:01 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:51:01 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 19:53:20 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 19:53:20 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 19:56:00 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 373ms (Views: 372.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses/course_outline.self-b7b5f36b5335a39e6b3dc6f57f9a8b096d99a85acc1ad91f40b07733c93d8089.js?body=1" for 127.0.0.1 at 2015-09-30 19:56:00 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 19:56:01 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2015-09-30 20:01:45 +0530
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 384ms (Views: 380.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/views/courses/courses_index.self-892b8c0bc1b41ecc49bb630c515f8ceb7c8c38d2234b2fffa17df0fb46441d06.js?body=1" for 127.0.0.1 at 2015-09-30 20:01:45 +0530
+
+
+Started GET "/courses/1/course_content" for 127.0.0.1 at 2015-09-30 20:01:46 +0530
+Processing by CoursesController#course_content as JSON
+  Parameters: {"course_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/1/sections/74" for 127.0.0.1 at 2015-09-30 20:02:25 +0530
+Processing by SectionsController#show as JSON
+  Parameters: {"course_id"=>"1", "id"=>"74"}
+{"controller"=>"sections", "action"=>"show", "course_id"=>"1", "id"=>"74"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assessments/1" for 127.0.0.1 at 2015-09-30 20:02:25 +0530
+Processing by AssessmentsController#show as JSON
+  Parameters: {"id"=>"1"}
+{"controller"=>"assessments", "action"=>"show", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)

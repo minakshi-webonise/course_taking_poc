@@ -1,15 +1,18 @@
 <h2> Assessment</h2>
 <ul class="assessment-result">
   <% _.each(assessment,function(value,questionKey){ %>
-    <li><h4><%=value.question%></span></h4>
-      <% _.each(value.answers,function(answer,key){ %>
-        <div class='assessment-option'>
-          <input type="radio" class="assessmentOptions" id="<%=key%>" name ="option_<%=questionKey%>"/>
-          <label><%=answer%></label>
-        </div>
-      <% }) %>
-    <div class="clearfix"></div>
-    <button class="saveOption btn btn-primary saveBtn_<%=questionKey%>"  data-id= <%=questionKey%>>Save</button>
+    <li>
+      <label><%=value.question%></label>
+      <div class='assessment-option-wrap'>
+        <% _.each(value.answers,function(answer,key){ %>
+          <span class='assessment-option'>
+            <input type="radio" class="assessmentOptions" id="<%=key%>" name ="option_<%=questionKey%>"/>
+            <span><%=answer%></span>
+          </span>
+        <% }) %>
+      </div>
+      <div class="clearfix"></div>
+      <button class="saveOption btn btn-primary btn-sm saveBtn_<%=questionKey%>"  data-id= <%=questionKey%>>Save</button>
   <% }) %>
 </ul>
 

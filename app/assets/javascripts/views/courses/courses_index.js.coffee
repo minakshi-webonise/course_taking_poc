@@ -2,7 +2,7 @@ class CourseTaking.Views.CoursesIndex extends Backbone.View
   el: '#main-container'
   template: JST['courses/index']
 
-  events: 'click .sections': 'showCourseContent'
+  events: {'click .sections': 'showCourseContent' ,'click .sub-menu': 'toggleChapters' }
   initialize: ->
     @model.bind('change', @render)
 
@@ -13,8 +13,6 @@ class CourseTaking.Views.CoursesIndex extends Backbone.View
     console
 
     $('#wrap').append @courseOutline.render()
-
-
 
   showCourseContent:(events) ->
 
@@ -29,3 +27,7 @@ class CourseTaking.Views.CoursesIndex extends Backbone.View
     $('#course_content').append @courseContent.render()
     # $('#course_info').append @courseContent.render()
     # $('.content-wrap').html('')
+
+  toggleChapters:(events) ->
+    console.log($(events.currentTarget))
+    $(events.currentTarget).toggleClass('active').find('ul').slideToggle();
