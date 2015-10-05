@@ -1,4 +1,10 @@
-<p>fasdfsaddddddddddd</ps>
 <div id = 'course_info'></div>
 <span class = 'content-wrap'></span>
-<p class ='course_name'><%=id+''+text%></p>
+<p class ='course_name'><%= console.log(section)%></p>
+ <% _.each(section,function(sec){ %>
+  <h1> Title </h6>
+  <h3> <%= sec.text %>
+  <h2> Authors </h1>
+  <h3> <%= sec.author %>
+
+<% }) %>

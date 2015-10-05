@@ -1,41 +1,56 @@
 class CourseTaking.Views.CourseContentView extends Backbone.View
-  template: JST['courses/course_content']
+  textTemplate: JST['courses/course_content']
   template1: JST['courses/assessment']
+  practiseTemplate: JST['courses/practise']
 
   events: 'click .saveOption': 'answerSave'
 
   initialize: (options)->
     @dataId = options.dataId
+    @dataType = options.dataType
+
 
 
   render: ->
-    @model = new CourseTaking.Models.CourseContent()
-    @model.set({id:@dataId })
-    @model.fetch({
-      success: =>
-        console.log('some one', @model.get('section_type'))
-        if @model.get('section_type') is 'assesment'
+    $('.course-content-wrap').html('')
+    if @dataType is 'text'
+      @textModel = new CourseTaking.Models.CourseContent()
+      @textModel.set({id:@dataId })
 
-          @assesmentModel = new CourseTaking.Models.CourseAssessment()
-          @assesmentModel.fetch({
-            success: =>
-              @$el.html @template1({assessment: @assesmentModel.get('questions')})
-            })
-          # @assesment = new CourseTaking.Views.AssessmentView({model:@assesmentModel, el: @$el})
-          # console.log('newwwwwwwwwwwwwwww', @assesmentModel)
-          # @$el.html @template1({assessment: @assesmentModel})
-        else
-          @$el.html @template({id: @model.get('id'),text: @model.get('text'), type: @model.get('section_type')})
-        @
-    })
+      @textModel.fetch({
+        success: =>
+          @$el.html @textTemplate({section:@textModel.get('details')})
+      })
+    else if @dataType is 'assignment'
+      @assesmentModel = new CourseTaking.Models.CourseAssessment()
+      @assesmentModel.fetch({
+        success: =>
+          @$el.html @template1({assessment: @assesmentModel.get('questions')})
+        })
+    else if @dataType is 'practice_test'
+      @practiseModel = new CourseTaking.Models.CoursePractiseTest()
+      @practiseModel.fetch({
+        success: =>
+          @$el.html @practiseTemplate({practise: @practiseModel.get('questions')})
+        })
 
   answerSave: (events) ->
-    optionId = $(events.currentTarget).attr('data-id')
-    console.log('element', $('input[name="option_#{optionId}"]').find('.assessmentOptions').prop("checked", true))
-    if $('input[name="option<%=optionId%>"]').find('.assessmentOptions').prop("checked", true)
+    questionId = $(events.currentTarget).attr('data-id')
+    @assessmnetSaveModel = new CourseTaking.Models.AssessmentSave()
+    cTaker=null
+    $.each $('.assessment-option-'+questionId).find('.assessmentOptions'), (value) ->
+      if $(this).prop('checked')
+        optionId = $(this).attr 'id'
+        cTaker=optionId
 
-      alert('yoooooo')
-    console.log('callles', $(events.currentTarget).attr('data-id'))
+    @assessmnetSaveModel.set({selected_answer: cTaker})
+    @assessmnetSaveModel.save
+
+
+
+  # checkedAnswerSave: (events) ->
+  #   console.log('selected options are', $('input[name="option_0"]:checked'))
+  #   $('input[name="option_0"]:checked')
 
 
 

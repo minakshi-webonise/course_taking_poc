@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :sections
-  resources :assessments
+  resources :assessments do
+    get :practise_data
+  end
   resources :courses do
     get :course_content
     resources :sections do

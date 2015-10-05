@@ -1,0 +1,15 @@
+<h2> Practise Question </h2>
+<ul class="assessment-result">
+  <% _.each(practise,function(value,questionKey){ %>
+    <li><h4><%=value.question%></span></h4>
+      <div class="assessment-option-<%=questionKey%>">
+        <% _.each(value.answers,function(answer,key){ %>
+            <span><input type="checkbox" class="practiseOptions" id="<%=key%>" name ="option_<%=questionKey%>"/>
+            <label><%=answer%></label></span>
+        <% }) %>
+      </div>
+    <div class="clearfix"></div>
+    <button class="savePractiseOption btn btn-primary saveBtn_<%=questionKey%>" data-id= <%=questionKey%>>Save</button>
+  <% }) %>
+</ul>
+
