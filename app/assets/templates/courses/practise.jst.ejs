@@ -1,10 +1,10 @@
 <h2> Practise Question </h2>
 <ul class="assessment-result">
   <% _.each(practise,function(value,questionKey){ %>
-    <li><h4><%=value.question%></span></h4>
+    <li class='practice-question'><h4><%=value.question%></span></h4>
       <div class="assessment-option-<%=questionKey%>">
         <% _.each(value.answers,function(answer,key){ %>
-            <span><input type="checkbox" class="practiseOptions" id="<%=key%>" name ="option_<%=questionKey%>"/>
+            <span><input type="radio" class="practiseOptions" id="<%=key%>" name ="option_<%=key%>"/>
             <label><%=answer%></label></span>
         <% }) %>
       </div>

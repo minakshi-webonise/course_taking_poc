@@ -1,4 +1,4 @@
-class CourseTaking.Views.AssessmentView extends Backbone.View
+class CourseTaker.Views.AssessmentView extends Backbone.View
   template: JST['courses/assessment']
 
   initialize: ->

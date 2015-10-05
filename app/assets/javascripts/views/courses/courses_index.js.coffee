@@ -1,4 +1,4 @@
-class CourseTaking.Views.CoursesIndex extends Backbone.View
+class CourseTaker.Views.CoursesIndex extends Backbone.View
   el: '#main-container'
   template: JST['courses/index']
 
@@ -7,17 +7,16 @@ class CourseTaking.Views.CoursesIndex extends Backbone.View
     @model.bind('change', @render)
 
   render: =>
-    @collection = new CourseTaking.Collections.Courses(@model.toJSON())
+    @collection = new CourseTaker.Collections.Courses(@model.toJSON())
     @$el.append @template(courses: @model.toJSON())
-    @courseOutline = new CourseTaking.Views.CourseOutlineView({model: @model, el: @$el.find('#wrap')})
-    console
+    @courseOutline = new CourseTaker.Views.CourseOutlineView({model: @model, el: @$el.find('#wrap')})
     $('#wrap').append @courseOutline.render()
-    $('.course-content-wrap').html('<h1>Welcome to our course</h1>')
-
+    $('.sub-menu > ul').hide()
+    $('.course-content-wrap').html('<h1>Welcome to Test course</h1>')
 
 
   showCourseContent:(events) ->
-    @courseContent = new CourseTaking.Views.CourseContentView({
+    @courseContent = new CourseTaker.Views.CourseContentView({
       el: @$el.find('#course_content'),
       dataId:$(events.currentTarget).attr('data-id')
       dataType:$(events.currentTarget).attr('data-type')
@@ -25,5 +24,4 @@ class CourseTaking.Views.CoursesIndex extends Backbone.View
     $('#course_content').append @courseContent.render()
 
   toggleChapters:(events) ->
-    console.log('fsd',$(events.currentTarget))
     $(events.currentTarget).toggleClass('active').find('ul').slideToggle();

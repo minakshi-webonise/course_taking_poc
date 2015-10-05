@@ -1,5 +1,5 @@
 #= require_self
-window.CourseTaking =
+window.CourseTaker =
   Models: {}
   Collections: {}
   Views: {}

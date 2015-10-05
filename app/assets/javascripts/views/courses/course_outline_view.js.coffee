@@ -1,4 +1,4 @@
-class CourseTaking.Views.CourseOutlineView extends Backbone.View
+class CourseTaker.Views.CourseOutlineView extends Backbone.View
   template: JST['courses/course_outline']
 
   initialize: ->

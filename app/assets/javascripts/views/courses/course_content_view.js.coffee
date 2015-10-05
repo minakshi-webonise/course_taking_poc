@@ -1,20 +1,19 @@
-class CourseTaking.Views.CourseContentView extends Backbone.View
+class CourseTaker.Views.CourseContentView extends Backbone.View
   textTemplate: JST['courses/course_content']
-  template1: JST['courses/assessment']
+  assessmentTemplate: JST['courses/assessment']
   practiseTemplate: JST['courses/practise']
+  resultTemplate: JST['courses/assessment_result']
 
-  events: 'click .saveOption': 'answerSave'
+  events: {'click .saveOption': 'answerSave' ,'click .savePractiseOption': 'practiseAnswerSave' }
 
   initialize: (options)->
     @dataId = options.dataId
     @dataType = options.dataType
 
-
-
   render: ->
     $('.course-content-wrap').html('')
     if @dataType is 'text'
-      @textModel = new CourseTaking.Models.CourseContent()
+      @textModel = new CourseTaker.Models.CourseContent()
       @textModel.set({id:@dataId })
 
       @textModel.fetch({
@@ -22,13 +21,13 @@ class CourseTaking.Views.CourseContentView extends Backbone.View
           @$el.html @textTemplate({section:@textModel.get('details')})
       })
     else if @dataType is 'assignment'
-      @assesmentModel = new CourseTaking.Models.CourseAssessment()
+      @assesmentModel = new CourseTaker.Models.CourseAssessment()
       @assesmentModel.fetch({
         success: =>
-          @$el.html @template1({assessment: @assesmentModel.get('questions')})
+          @$el.html @assessmentTemplate({assessment: @assesmentModel.get('questions')})
         })
     else if @dataType is 'practice_test'
-      @practiseModel = new CourseTaking.Models.CoursePractiseTest()
+      @practiseModel = new CourseTaker.Models.CoursePractiseTest()
       @practiseModel.fetch({
         success: =>
           @$el.html @practiseTemplate({practise: @practiseModel.get('questions')})
@@ -36,21 +35,47 @@ class CourseTaking.Views.CourseContentView extends Backbone.View
 
   answerSave: (events) ->
     questionId = $(events.currentTarget).attr('data-id')
-    @assessmnetSaveModel = new CourseTaking.Models.AssessmentSave()
-    cTaker=null
-    $.each $('.assessment-option-'+questionId).find('.assessmentOptions'), (value) ->
+    @assessmnetSaveModel = new CourseTaker.Models.AssessmentSave()
+    cTaker = null
+    $.each $('.assessmentOptions'), (value) ->
       if $(this).prop('checked')
         optionId = $(this).attr 'id'
-        cTaker=optionId
+        cTaker = optionId
 
     @assessmnetSaveModel.set({selected_answer: cTaker})
-    @assessmnetSaveModel.save
+    @assessmnetSaveModel.save null,
+      success: (model, response) =>
+        $('.saveOption').attr('disabled','disabled')
+        @$el.html('')
+        if response['selected_answer'] is response['correct_answer']
+          @$el.append @resultTemplate()
+        else
+          @$el.append 'Oppss your answer is not correct'
+        return
+      error: (model, response) ->
+        console.log('error in saving question')
+        return
 
 
+  practiseAnswerSave: (events) ->
+    @practiceSaveModel = new CourseTaker.Models.PractiseSave()
+    practiseOptionId = null
+    $.each $('.practiseOptions'), (value) ->
+      if $(this).prop('checked')
+        optionId = $(this).attr 'id'
+        practiseOptionId = optionId
 
-  # checkedAnswerSave: (events) ->
-  #   console.log('selected options are', $('input[name="option_0"]:checked'))
-  #   $('input[name="option_0"]:checked')
-
+    @practiceSaveModel.set({selected_answer: practiseOptionId})
+    @practiceSaveModel.save null,
+      success: (model, response) =>
+        @$el.html('')
+        if response['selected_answer'] is response['correct_answer']
+          @$el.append @resultTemplate()
+        else
+          @$el.append 'Oppss!! your answer is not correct'
+        return
+      error: (model, response) ->
+        console.log('error in saving question')
+        return
 
 

@@ -57,6 +57,30 @@ nav
             float: left
           a
             padding: 0 20px
+.vertical-left-menu
+  li
+    position: relative
+    &:after
+      content: ""
+      display: inline-block
+      width: 0
+      height: 0
+      border-left: 6px solid transparent
+      border-right: 6px solid transparent
+      border-top: 6px solid #333
+      position: absolute
+      right: 10px
+      top: 24px
+  .active
+    &:after
+      border-left: 6px solid transparent
+      border-right: 6px solid transparent
+      border-bottom: 6px solid #333
+      border-top: 0px solid transparent
+    li
+      &:after
+        display: none
+
 
 .course-content-wrap
   margin: 20px
@@ -64,6 +88,8 @@ nav
   background: #f8f8f8
   padding: 25px
   min-height: 500px
+  h1
+    text-align: center
   h2
     color: #2F4C8F
     margin-top: 0
@@ -85,6 +111,27 @@ nav
       display: table
       span
         margin: 0 15px 0 10px
+  .document-wrap
+    .author-name
+      font-size: 12px
+      color: #707070
+      float: right
+  .assessment-result
+    .assessment-content-wrap
+      .assessment-option
+        display: block
+        float: none
+        input
+          margin-top: 10px
+      .btn
+        margin-right: 10px
+      a:visited
+        color: #FFF
+    .practice-question
+      label
+        display: inline-block
+        margin: 0 10px 10px 0
+
 
 .ouline_wrapper
   background-color: #b0c4de

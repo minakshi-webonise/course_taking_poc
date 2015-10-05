@@ -62,13 +62,9 @@ class CoursesController < ApplicationController
   end
 
   def course_content
-    # render json: {"course_id":1, "course_name":"test", "chapters": [{"id":47, "parent_id":0, "name":"Chapter 1", "version_id":8, "created_at":"2015-09-23T06:55:03.991Z", "updated_at":"2015-09-23T06:55:03.991Z", "course_order":0, "chapter_order":7340032, "content":false,
-    #   "sections":[{"id":74, 'section_type':'text',"parent_id":47, "name":"Document: test", "version_id":8, "created_at":"2015-09-29T07:36:44.724Z", "updated_at":"2015-09-29T07:36:44.724Z", "course_order":4194304, "chapter_order":0, "content":true}, {"id":76, 'section_type':'assignment', "parent_id":47, "name":"Assessment: Test 1", "version_id":8, "created_at":"2015-09-29T08:42:52.736Z", "updated_at":"2015-09-29T08:42:52.736Z", "course_order":4194304, "chapter_order":4194304, "content":true}, {"id":79, "parent_id":47, "name":"test", "version_id":8, "created_at":"2015-09-29T08:49:48.480Z", "updated_at":"2015-09-29T08:49:48.480Z", "course_order":4194304, "chapter_order":6291456, "content":false}]}, {"id":47, "parent_id":0, "name":"Chapter 1", "version_id":8, "created_at":"2015-09-23T06:55:03.991Z", "updated_at":"2015-09-23T06:55:03.991Z", "course_order":0, "chapter_order":7340032, "content":false,
-    #   "sections":[{"id":74, "parent_id":47, "name":"Document: test", "version_id":8, "created_at":"2015-09-29T07:36:44.724Z", "updated_at":"2015-09-29T07:36:44.724Z", "course_order":4194304, "chapter_order":0, "content":true}, {"id":76, "parent_id":47, "name":"Assessment: Test 2", "version_id":8, "created_at":"2015-09-29T08:42:52.736Z", "updated_at":"2015-09-29T08:42:52.736Z", "course_order":4194304, "chapter_order":4194304, "content":true}, {"id":79, "parent_id":47, "name":"test", "version_id":8, "created_at":"2015-09-29T08:49:48.480Z", "updated_at":"2015-09-29T08:49:48.480Z", "course_order":4194304, "chapter_order":6291456, "content":false}]}]}
-
      render json: {
         "course_id":1,
-        "course_name":"test",
+        "course_name":"Test course",
         "chapters":[{
           "id":47,
           "parent_id":0,
@@ -135,7 +131,7 @@ class CoursesController < ApplicationController
             "content":true
           }, {
             "id":76,
-            "section_type":"assessment",
+            "section_type":"assignment",
             "parent_id":47,
             "name":"Assessment: Test 2",
             "version_id":8,

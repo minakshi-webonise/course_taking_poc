@@ -4,12 +4,13 @@
   </div>
   <ol class='vertical-left-menu'>
     <% _.each(courses,function(course){ %>
-      <li class='sub-menu' ><a href= #  class = 'chapters' id = "course_<%=course.id%>" data-id= <%=course.id%> data-type= <%=course.section_type%> ><%= course.name %></a></li>
+      <li class='sub-menu' ><a href= #  class = 'chapters' id = "course_<%=course.id%>" data-id= <%=course.id%> data-type= <%=course.section_type%> ><%= course.name %></a>
         <ul>
           <% _.each(course.sections,function(section){ %>
             <li><a href= # id = "section_<%=section.id%>" class = 'sections' data-id= <%=section.id%> data-type= <%=section.section_type%> ><%= section.name %></a></li>
           <% }) %>
         </ul>
+      </li>
       <% }) %>
     </ol>
 </nav>

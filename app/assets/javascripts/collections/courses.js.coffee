@@ -1,5 +1,5 @@
-class CourseTaking.Collections.Courses extends Backbone.Collection
+class CourseTaker.Collections.Courses extends Backbone.Collection
 
-  model: CourseTaking.Models.Course
+  model: CourseTaker.Models.Course
   url: '/courses'
 

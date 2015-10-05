@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   resources :sections
   resources :assessments do
     get :practise_data
+    post :save_answer
+    get :show_result
+    post :save_practise_answer
   end
   resources :courses do
     get :course_content

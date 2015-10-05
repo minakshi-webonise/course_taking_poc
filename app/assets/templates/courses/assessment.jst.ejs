@@ -1,7 +1,7 @@
 <h2> Assessment</h2>
 <ul class="assessment-result">
   <% _.each(assessment,function(value,questionKey){ %>
-    <li>
+    <li class='assessment-content-wrap'>
       <label><%=value.question%></label>
       <div class='assessment-option-wrap'>
         <% _.each(value.answers,function(answer,key){ %>
